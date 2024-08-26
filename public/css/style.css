@@ -1,0 +1,275 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f0e2;
+    color: hwb(0 97% 3%);
+    
+}
+
+.container {
+    max-width: 87%;
+    margin: 20px auto;
+    padding: 20px;
+    /* background: rgba(255, 255, 255, 0.9); */
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    /* opacity: 0.; */
+}
+
+/* Index Page Styles */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #d4af37;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #d4af37;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #c29a2f;
+}
+
+.btn-container button {
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-container button:hover {
+    background-color: #c29a2f;
+}
+
+.info-popup {
+    display: none;
+    margin-top: 20px;
+}
+
+.function-image {
+    max-width: 80%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    input[type="submit"],
+    .btn-container button {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+}
+
+.function-image {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the GIFs are uniformly scaled */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #555;
+}
+
+
+/* Falling Star Animation */
+@keyframes falling-stars {
+    0% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: falling-stars linear infinite;
+}
+
+body {
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Home Page Specific Styles */
+.home-stars {
+    background: linear-gradient(180deg, #000000 0%, #000033 100%);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Invitation Page Specific Styles */
+.invitation-stars {
+    background: linear-gradient(180deg, #111111 0%, #222244 100%);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+/* Home Page Specific Styles */
+.home-stars {
+    background: url('/images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Invitation Page Specific Styles */
+.invitation-stars {
+    background: url('/images/bg1.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Falling Star Animation */
+@keyframes falling-stars {
+    0% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: falling-stars linear infinite;
+}
+
+body {
+    overflow: hidden; /* Prevent scrolling */
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 10px;
+    font-size: 14px;
+    color: #888;
+    background-color: #f8f8f8;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-y: auto; /* Ensures vertical scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling for a better user experience */
+}
+
+.container {
+    min-height: 90vh; /* Ensures container takes at least the full viewport height */
+    padding-bottom: 0px; /* Add padding to avoid content overlapping with footer */
+}
+
+/* Example Footer Fixed at the Bottom */
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 28px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0px 0px;
+    font-size: 10px;
+    color: #888;
+    background-color: #f8f8f8;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

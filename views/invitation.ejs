@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation -Shujaat Wedding</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="invitation-stars">
+    <!-- Home Button -->
+    <button class="home-button" onclick="goHome()">Home</button>
+
+    <div class="container">
+        <h2>Welcome <span id="guestName"><%= guestName %></span>!</h2>
+        <p>You are cordially invited to the wedding of Shujaat .</p>
+        <p>We look forward to celebrating this joyous occasion with you.</p>
+
+        <div class="btn-container">
+            <button onclick="showInfo('barat')">Barat</button>
+            <button onclick="showInfo('reception')">Reception</button>
+            <button onclick="showInfo('mehndi')">Mehndi</button>
+            <button onclick="showInfo('haldi')">Haldi</button>
+            <button onclick="showInfo('Marwa')">Marwa</button>
+
+        </div>
+
+        <div class="info-popup" id="barat-info">
+            <p><strong>Barat:</strong> [2 february, 8pm, Location]</p>
+            <img src="/images/barat.png" alt="Reception" class="function-image">
+        </div>
+        <div class="info-popup" id="reception-info">
+            <p><strong>Reception:</strong> [4 february, 8pm , Piplawan]</p>
+            <img src="/images/walima.png" alt="Reception" class="function-image">
+        </div>
+        <div class="info-popup" id="mehndi-info">
+            <p><strong>Mehndi:</strong> [31 january, 7pm , piplwan]</p>
+            <img src="/images/menhdi.png" alt="Mehndi" class="function-image">
+        </div>
+        <div class="info-popup" id="haldi-info">
+            <p><strong>Haldi:</strong> [30 january, 7pm , piplwan]</p>
+            <img src="/images/haldi.png" alt="Haldi" class="function-image">
+        </div>
+        <div class="info-popup" id="Marwa-info">
+            <p><strong>Marwa:</strong> [1 february , 6:30pm , Piplawan]</p>
+            <img src="/images/Marwa.png" alt="Marwa" class="function-image">
+        </div>
+       
+
+        <p>We hope you can join us!</p>
+    </div>
+
+    <!-- Footer with Copyright Notice -->
+    <footer>
+        <p>&copy; 2024 Wedding Invitation. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
